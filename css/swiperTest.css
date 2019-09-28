@@ -14,6 +14,14 @@ body {
     height: 100%;
 }
 
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 16px;
+}
+
 .banner {
     width: 100%;
     height: 100%;
@@ -45,6 +53,19 @@ body {
     animation-timing-function: linear;
 }
 
+
+/* 无限闪动效果 */
+
+.myFlash {
+    animation-name: myFlash;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.flash {
+    animation-iteration-count: infinite;
+}
+
 @keyframes float {
     0% {
         bottom: 30px;
@@ -54,6 +75,18 @@ body {
     }
     100% {
         bottom: 30px;
+    }
+}
+
+@keyframes myFlash {
+    0% {
+        display: none;
+    }
+    50% {
+        display: block;
+    }
+    100% {
+        display: none;
     }
 }
 
@@ -71,17 +104,19 @@ body {
 }
 
 .slide-1 .bg img {
-    width: 320px;
+    /* width: 320px; */
+    width: 6.4rem;
 }
 
 .slide-1 .logo {
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 0.1rem;
+    top: 0.1rem;
 }
 
 .slide-1 .logo img {
-    width: 102px;
+    /* width: 102px; */
+    width: 2.02rem;
 }
 
 
@@ -99,69 +134,83 @@ body {
 
 .slide-1 .there {
     position: absolute;
-    top: 250px;
-    left: 70px;
+    /* top: 250px;
+    left: 70px; */
+    top: 5rem;
+    left: 1.4rem;
     z-index: -1;
 }
 
 .slide-1 .there img {
-    width: 179px;
+    /* width: 179px; */
+    width: 3.58rem;
 }
 
 .slide-1 .life {
     position: absolute;
-    top: 248px;
-    right: 70px;
+    /* top: 248px;
+    right: 70px; */
+    top: 4.96rem;
+    right: 1.40rem;
     z-index: 1;
 }
 
 .slide-1 .life img {
-    width: 179px;
+    /* width: 179px; */
+    width: 3.58rem;
 }
 
 .slide-1 .more {
     position: absolute;
-    top: 248px;
-    left: 70px;
+    /* top: 248px;
+    left: 70px; */
+    top: 4.96rem;
+    right: 1.40rem;
     z-index: 2;
 }
 
 .slide-1 .more img {
-    width: 179px;
+    width: 3.58rem;
     z-index: 3;
 }
 
 .slide-1 .at {
     position: absolute;
-    top: 248px;
-    right: 70px;
+    /* top: 248px;
+    right: 70px; */
+    top: 4.96rem;
+    right: 1.40rem;
     z-index: 4;
 }
 
 .slide-1 .at img {
-    width: 179px;
+    /* width: 179px; */
+    width: 3.58rem;
 }
 
 .slide-1 .pwqc {
     position: absolute;
-    left: 70px;
-    top: 250px;
+    /* left: 70px;
+    top: 250px; */
+    top: 4.96rem;
+    left: 1.40rem;
     z-index: 5;
 }
 
 .slide-1 .pwqc img {
-    width: 179px;
+    width: 3.58rem;
 }
 
 .slide-1 .wxrs {
     position: absolute;
-    right: 70px;
-    top: 250px;
+    top: 4.96rem;
+    right: 1.40rem;
     z-index: 6;
 }
 
 .slide-1 .wxrs img {
-    width: 179px;
+    /* width: 179px; */
+    width: 3.58rem;
 }
 
 
@@ -173,41 +222,52 @@ body {
 
 .slide-2 .me {
     position: absolute;
-    right: 50px;
-    bottom: 140px;
+    /* right: 50px;
+    bottom: 140px; */
+    right: 1rem;
+    bottom: 2.8rem;
     z-index: 18;
 }
 
 .slide-2 .me img {
-    width: 34px;
+    /* width: 34px; */
+    width: 0.68rem;
 }
 
 .slide-2 .dog {
     position: absolute;
-    right: 56px;
-    bottom: 70px;
+    /* right: 56px;
+    bottom: 70px; */
+    right: 1.12rem;
+    bottom: 1.4rem;
     z-index: 18;
 }
 
 .slide-2 .dog img {
-    width: 22px;
+    /* width: 22px; */
+    width: 0.44rem;
 }
 
 .slide-2 .self {
     position: absolute;
-    right: 18px;
-    bottom: 4px;
+    /* right: 18px;
+    bottom: 4px; */
+    right: 0.36rem;
+    bottom: 0.08rem;
     z-index: 18;
 }
 
 .slide-2 .self img {
-    width: 57px;
+    /* width: 57px; */
+    width: 1.14rem;
 }
 
 .slide-2 .peopleBox {
     /* 屏幕宽高 */
-    width: 320px;
-    height: 568px;
+    /* width: 320px;
+    height: 568px; */
+    width: 6.40rem;
+    height: 11.36rem;
     position: absolute;
     /* top: 50%;
     transform: translateY(-50%); */
@@ -222,5 +282,362 @@ body {
 }
 
 .slide-2 .peopleBox .people img {
-    width: 274px;
+    /* width: 274px; */
+    width: 5.48rem;
+}
+
+.slide-2 .peopleBox .star {
+    position: absolute;
+    left: -0.56rem;
+    top: 0.8rem;
+}
+
+.slide-2 .peopleBox .star img {
+    width: 5.37rem;
+}
+
+.slide-2 .peopleBox .light {
+    position: absolute;
+    right: -0.3rem;
+    top: 0.84rem;
+    z-index: 20;
+}
+
+.slide-2 .peopleBox .light img {
+    width: 5.48rem;
+}
+
+.slide-2 .renmai {
+    position: absolute;
+    /* left: 10px; */
+    left: 0.2rem;
+    top: 0.1rem;
+    z-index: 18;
+}
+
+.slide-2 .renmai img {
+    /* width: 61px; */
+    width: 1.22rem;
+}
+
+.slide-2 .jizhi {
+    position: absolute;
+    /* left: 10px; */
+    left: 0.2rem;
+    top: 0.25rem;
+    z-index: 18;
+}
+
+.slide-2 .jizhi img {
+    /* width: 61px; */
+    width: 1.22rem;
+}
+
+.slide-2 .sanlang {
+    position: absolute;
+    /* left: 10px; */
+    left: 0.2rem;
+    top: 0.15rem;
+    z-index: 18;
+}
+
+.slide-2 .sanlang img {
+    /* width: 61px; */
+    width: 1.22rem;
+}
+
+.slide-2 .tili {
+    position: absolute;
+    /* left: 10px; */
+    left: 0.2rem;
+    top: 0.25rem;
+    z-index: 18;
+}
+
+.slide-2 .tili img {
+    /* width: 61px; */
+    width: 1.22rem;
+}
+
+
+/* 第三页 */
+
+.slide-3 {
+    background: #09bee3;
+}
+
+.slide-3 .me {
+    position: absolute;
+    left: 0.3rem;
+    top: 0.3rem;
+    z-index: 18;
+}
+
+.slide-3 .me img {
+    width: 0.68rem;
+}
+
+.slide-3 .cat {
+    position: absolute;
+    left: 0.3rem;
+    top: 0.35rem;
+    z-index: 18;
+}
+
+.slide-3 .cat img {
+    width: 0.4rem;
+}
+
+.slide-3 .peopleBox {
+    width: 6.40rem;
+    height: 11.36rem;
+    position: absolute;
+}
+
+.slide-3 .people {
+    left: 50%;
+    top: 50%;
+    transform: translate(-66%, -50%);
+    position: absolute;
+}
+
+.slide-3 .people img {
+    width: 5.37rem;
+}
+
+.slide-3 .light {
+    position: absolute;
+}
+
+.slide-3 .light img {}
+
+.slide-3 .star {
+    position: absolute;
+}
+
+.slide-3 .star img {}
+
+.slide-3 .cat img {
+    width: 0.4rem;
+}
+
+.slide-3 .self {
+    position: absolute;
+    left: 0.40rem;
+    top: 0.35rem;
+    z-index: 18;
+}
+
+.slide-3 .self img {
+    width: 1.15rem;
+}
+
+.slide-3 .dali {
+    position: absolute;
+    right: 0.29rem;
+    bottom: 0.2rem;
+    z-index: 18;
+}
+
+.slide-3 .dali img {
+    width: 1.19rem;
+}
+
+.slide-3 .sunv {
+    position: absolute;
+    right: 0.26rem;
+    bottom: 0.2rem;
+    z-index: 18;
+}
+
+.slide-3 .sunv img {
+    width: 1.19rem;
+}
+
+.slide-3 .mingrui {
+    position: absolute;
+    right: 0.23rem;
+    bottom: 0.2rem;
+    z-index: 18;
+}
+
+.slide-3 .mingrui img {
+    width: 1.19rem;
+}
+
+.slide-3 .wuxiang {
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.2rem;
+    z-index: 18;
+}
+
+.slide-3 .wuxiang img {
+    width: 1.19rem;
+}
+
+
+/* 第四张 */
+
+.slide-4 {
+    background: #36a15c;
+}
+
+.dog {
+    position: absolute;
+    z-index: 4;
+}
+
+.dog img {
+    width: 6.4rem;
+}
+
+.cat {
+    position: absolute;
+    z-index: 3;
+}
+
+.cat img {
+    width: 6.4rem;
+}
+
+.sel-dog {
+    position: absolute;
+    z-index: 10;
+}
+
+.sel-dog img {
+    width: 6.4rem;
+}
+
+.sel-cat {
+    position: absolute;
+    z-index: 10;
+}
+
+.sel-cat img {
+    width: 6.4rem;
+}
+
+.xiao {
+    position: absolute;
+    z-index: 10;
+}
+
+.xiao img {
+    width: 6.4rem;
+}
+
+.market {
+    position: absolute;
+    z-index: 10;
+}
+
+.market img {
+    width: 6.4rem;
+}
+
+.choose {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-22%);
+}
+
+.choose img {
+    width: 1.66rem;
+}
+
+.choose .you img {
+    position: relative;
+    bottom: 0.5rem;
+}
+
+
+/* 第五张 */
+
+.slide-5 {
+    background: #669cff;
+}
+
+.slide-5 .title {
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    transform: translateX(-50%);
+}
+
+.slide-5 .title img {
+    width: 2.6rem;
+}
+
+.slide-5 .node {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -226%);
+}
+
+.slide-5 .node img {
+    width: 0.04rem;
+}
+
+
+/* 第六张 */
+
+.slide-6 {}
+
+.slide-6 .logo {
+    position: absolute;
+    left: 0.1rem;
+    top: 0.1rem;
+}
+
+.slide-6 .logo img {
+    width: 2.20rem;
+}
+
+.slide-6 .title {
+    position: absolute;
+    left: 50%;
+    top: 1.5rem;
+    transform: translateX(-50%);
+}
+
+.slide-6 .title img {
+    width: 4.33rem;
+}
+
+.slide-6 .search {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 3rem;
+    width: 4.48rem;
+    height: 0.4rem;
+    border: 1px solid #ccc;
+}
+
+.slide-6 .search .word {
+    margin-top: .1rem;
+    margin-left: .1rem;
+}
+
+.slide-6 .search .word img {
+    width: 1.52rem;
+}
+
+.slide-6 .bottom-btn {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.34rem;
+}
+
+.slide-6 .bottom-btn img {
+    width: 2.05rem;
+}
+
+.slide-6 .bottom-btn .btn2 {
+    width: 1.47rem;
 }
