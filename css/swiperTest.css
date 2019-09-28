@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper .swiper-slide {
+    position: relative;
+}
+
+.up {
+    width: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.up img {
+    width: 19px;
+}
+
+
+/* 箭头浮动效果 */
+
+.float {
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes float {
+    0% {
+        bottom: 30px;
+    }
+    50% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 30px;
+    }
+}
+
+
+/* 第一页 */
+
+.slide-1 {}
+
+.slide-1 .bg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -200;
+}
+
+.slide-1 .bg img {
+    width: 320px;
+}
+
+.slide-1 .logo {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.slide-1 .logo img {
+    width: 102px;
+}
+
+
+/* .slide-1 .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+} */
+
+
+/* .slide-1 .text img {
+    width: 179px;
+} */
+
+.slide-1 .there {
+    position: absolute;
+    top: 250px;
+    left: 70px;
+    z-index: -1;
+}
+
+.slide-1 .there img {
+    width: 179px;
+}
+
+.slide-1 .life {
+    position: absolute;
+    top: 248px;
+    right: 70px;
+    z-index: 1;
+}
+
+.slide-1 .life img {
+    width: 179px;
+}
+
+.slide-1 .more {
+    position: absolute;
+    top: 248px;
+    left: 70px;
+    z-index: 2;
+}
+
+.slide-1 .more img {
+    width: 179px;
+    z-index: 3;
+}
+
+.slide-1 .at {
+    position: absolute;
+    top: 248px;
+    right: 70px;
+    z-index: 4;
+}
+
+.slide-1 .at img {
+    width: 179px;
+}
+
+.slide-1 .pwqc {
+    position: absolute;
+    left: 70px;
+    top: 250px;
+    z-index: 5;
+}
+
+.slide-1 .pwqc img {
+    width: 179px;
+}
+
+.slide-1 .wxrs {
+    position: absolute;
+    right: 70px;
+    top: 250px;
+    z-index: 6;
+}
+
+.slide-1 .wxrs img {
+    width: 179px;
+}
+
+
+/* 第二页 */
+
+.slide-2 {
+    background: #fe657a;
+}
+
+.slide-2 .me {
+    position: absolute;
+    right: 50px;
+    bottom: 140px;
+    z-index: 18;
+}
+
+.slide-2 .me img {
+    width: 34px;
+}
+
+.slide-2 .dog {
+    position: absolute;
+    right: 56px;
+    bottom: 70px;
+    z-index: 18;
+}
+
+.slide-2 .dog img {
+    width: 22px;
+}
+
+.slide-2 .self {
+    position: absolute;
+    right: 18px;
+    bottom: 4px;
+    z-index: 18;
+}
+
+.slide-2 .self img {
+    width: 57px;
+}
+
+.slide-2 .peopleBox {
+    /* 屏幕宽高 */
+    width: 320px;
+    height: 568px;
+    position: absolute;
+    /* top: 50%;
+    transform: translateY(-50%); */
+    /* z-index: -20; */
+}
+
+.slide-2 .peopleBox .people {
+    left: 50%;
+    top: 50%;
+    transform: translate(-36%, -54%);
+    position: absolute;
+}
+
+.slide-2 .peopleBox .people img {
+    width: 274px;
+}
